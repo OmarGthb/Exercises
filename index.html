@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="">
+  <script>
+  
+    function addTableTask() {
+      var classArray = ["state", "task", "deadline", "importance", "edit", "delete"];
+
+      var tableBody = document.getElementById('body-task-table')[0];
+
+      var tableRow = document.createElement("tr");
+      for(var i = 0; i < 5; i++) {
+        var cell = document.createElement("td");
+        cell.setAttribute("class", classArray[i]);
+        tableRow.appendChild(cell);
+      }
+      
+      tableBody.appendChild(tableRow);
+
+    };
+
+  </script>
+  <title>ToDoList</title>
+</head>
+<body>
+  <header id="main-header">
+    <div class="container">
+      <h2>ToDo List</h2>
+    </div>
+  </header>
+  <div class="container">
+    <div class="table">
+      <ul class="row">
+        <li>
+          <ul class="col">
+            <li><div class="state col"></div></li>
+            <li><div class="task col"><input type="text" placeholder="Your New Task"></div></li>
+            <li><div class="deadline col"><input type="datetime-local" name="Deadline for Task"></div></li>
+            <li><div class="importance col"><input type="number" min="0" max="10" name="importance" placeholder="weight"></div></li>
+            <li><div class="edit col"><button>Edit</button></div></li>
+            <li><div class="delete col"><button>Delete</button></div></li>
+          </ul>
+          <ul class="col">
+            <li><div class="state col"></div></li>
+            <li><div class="task col"><input type="text" placeholder="Your New Task"></div></li>
+            <li><div class="deadline col"><input type="datetime-local" name="Deadline for Task"></div></li>
+            <li><div class="importance col"><input type="number" min="0" max="10" name="importance" placeholder="weight"></div></li>
+            <li><div class="edit col"><button>Edit</button></div></li>
+            <li><div class="delete col"><button>Delete</button></div></li>
+          </ul>
+          <ul class="col">
+            <li><div class="state col"></div></li>
+            <li><div class="task col"><input type="text" placeholder="Your New Task"></div></li>
+            <li><div class="deadline col"><input type="datetime-local" name="Deadline for Task"></div></li>
+            <li><div class="importance col"><input type="number" min="0" max="10" name="importance" placeholder="weight"></div></li>
+            <li><div class="edit col"><button>Edit</button></div></li>
+            <li><div class="delete col"><button>Delete</button></div></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
+
+<!--
+      <table id="task-table">
+        <caption> 
+          Undone Tasks 
+        </caption>
+        <thead>
+        </thead>
+        <tbody id="body-task-table">
+          <tr colspan="1">
+            <td class="state">&#215;</td>
+            <td><input class="task" type="text" name="task" placeholder="task"></td>
+            <td><input class="deadline" type="datetime-local" name="deadline" placeholder="deadline"></td>
+            <td><input class="importance" type="number" min="0" max="10" name="importance" placeholder="importance"></td>
+            <td><button class="edit"><i class="fas fa-edit"></i></button></td>
+            <td><button class="delete"></button>&#215;</td>
+          </tr>
+        </tbody>
+        <tfoot class="footer">
+          <tr>
+            <td colspan="6">
+              <button class="add-task" onclick="addTableTask()">add task<span id="cross">&#43;</span></button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+-->
