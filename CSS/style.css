@@ -1,15 +1,18 @@
+/* global */
 body {
-  background: #f4f4f4;
-  color: #555;
+  background: #e4e4e4;
+  color: #333;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;;
+  font-size: 25px;
   line-height: 1.6em;
   margin: 0;
 }
 
-#main-header > div {
+#main-header {
   background: aquamarine;
   text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 .container {
@@ -18,49 +21,119 @@ body {
   overflow: hidden;
 }
 
-ul {
-  list-style: none;
-  margin: 10px 0px;
-}
-
-ul .col {
-  background: #333;
-}
-
-ul .col > li {
-  display: inline-flex;
-  flex-direction: column;
-
-}
-
 input {
-  background: #333;
-  border: none;
+  padding: 0px;
+  border: 0px;
 }
 
+/* list col */
+ul {
+  color: #999;
+  list-style: none;
+  display: flex;
+  padding: 0px
+}
+
+.row {
+  display: block;
+}
+
+.row > li {
+  padding: 5px;
+  border: 0px;
+  margin-bottom: 20px;
+}
+
+li {
+  background: #555;
+  border-radius: 10px;
+  width: auto;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+
+li > * > button {
+  background: #333;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.col > li {
+  background: #555;
+  color: #999;
+  background: #555;
+  color: #999;
+  padding: 0px;
+  margin: 0px 40px 0px 0px;
+}
+
+/* list row */
 .state {
+  width: auto;
+  padding: 0px;
+  border: 0px;
+}
+
+.state > * > button {
+  color: #733;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
   
 }
 
-.task {
-
+li .task {
+  width: auto;
+  padding: 0px;
+  border: 0px;
 }
 
 .deadline {
-
+  width: auto;
+  padding: 0px;
+  border: 0px;
 }
 
 .importance {
-
+  width: auto;
+  padding: 0px;
+  border: 0px
 }
 
-.edit {
-
+li .edit {
+  width: auto;
+  padding: 0px;
+  border: 0px;
+  margin-right: 2px;
+  align-content: left;
 }
 
-.delete {
-
+.edit > * > button {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px 0px 0px 8px;
 }
+
+li .delete {
+  width: auto;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+.delete > * > button {
+  width: auto;
+  padding: 0px 10px;
+  height: 45px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+input, button {
+  background: #555;
+  color: #999;
+  border: none;
+  font-weight: bold;
 
 /*
 table {

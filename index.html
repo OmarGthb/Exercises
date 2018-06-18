@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="">
   <script>
-  
+  /*
     function addTableTask() {
       var classArray = ["state", "task", "deadline", "importance", "edit", "delete"];
 
@@ -24,9 +24,9 @@
       tableBody.appendChild(tableRow);
 
     };
-
+  */
   </script>
-  <title>ToDoList</title>
+  <title>To Do List</title>
 </head>
 <body>
   <header id="main-header">
@@ -39,28 +39,22 @@
       <ul class="row">
         <li>
           <ul class="col">
-            <li><div class="state col"></div></li>
-            <li><div class="task col"><input type="text" placeholder="Your New Task"></div></li>
-            <li><div class="deadline col"><input type="datetime-local" name="Deadline for Task"></div></li>
-            <li><div class="importance col"><input type="number" min="0" max="10" name="importance" placeholder="weight"></div></li>
-            <li><div class="edit col"><button>Edit</button></div></li>
-            <li><div class="delete col"><button>Delete</button></div></li>
+            <li class="state"><div><button>&#215;</button></div></li>
+            <li class="task"><div><input type="text" placeholder="New Task"></div></li>
+            <li class="deadline"><div><input type="datetime-local" name="Deadline for Task"></div></li>
+            <li class="importance"><div><input type="number" min="0" max="10" name="importance" placeholder="weight"></div></li>
+            <li class="edit"><div><button>Edit</button></div></li>
+            <li class="delete"><div><button>Delete</button></div></li>
           </ul>
+        </li>
+        <li>
           <ul class="col">
-            <li><div class="state col"></div></li>
-            <li><div class="task col"><input type="text" placeholder="Your New Task"></div></li>
-            <li><div class="deadline col"><input type="datetime-local" name="Deadline for Task"></div></li>
-            <li><div class="importance col"><input type="number" min="0" max="10" name="importance" placeholder="weight"></div></li>
-            <li><div class="edit col"><button>Edit</button></div></li>
-            <li><div class="delete col"><button>Delete</button></div></li>
-          </ul>
-          <ul class="col">
-            <li><div class="state col"></div></li>
-            <li><div class="task col"><input type="text" placeholder="Your New Task"></div></li>
-            <li><div class="deadline col"><input type="datetime-local" name="Deadline for Task"></div></li>
-            <li><div class="importance col"><input type="number" min="0" max="10" name="importance" placeholder="weight"></div></li>
-            <li><div class="edit col"><button>Edit</button></div></li>
-            <li><div class="delete col"><button>Delete</button></div></li>
+            <li class="state"><div><button>&#215;</button></div></li>
+            <li class="task"><div><input type="text" placeholder="New Task"></div></li>
+            <li class="deadline"><div><input type="datetime-local" name="Deadline for Task"></div></li>
+            <li class="importance"><div><input type="number" min="0" max="10" name="importance" placeholder="weight"></div></li>
+            <li class="edit"><div><button>Edit</button></div></li>
+            <li class="delete"><div><button>Delete</button></div></li>
           </ul>
         </li>
       </ul>
